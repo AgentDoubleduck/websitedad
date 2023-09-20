@@ -1,0 +1,652 @@
+<!-- In this release, i focused on the more smaller things. For example the border of the radius, if you hover over the Facebook and Instagram buttons at the end of the website. 
+You can find this in line 232 for facebook and for Instagram in line 264. I have also added an "alt" for every picture and button. So disabled people, who may can't see the website are able 
+to use it with all of it's functions. Because most of the laptops for these laptops  are abble to translate the text on the website into the blind - text - languange but not buttons 
+or pictures.
+I have also added a green space at the end, which you can often see on many professional websites. So I taught it would look cool. 
+I have also added the function, that whan you click on the mail button, it will automaticly open you standart mail programm with Elisabeth Kaufhold's E-mail already put in.
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elisabth Kaufhold</title>
+        <style>
+            
+            .menu{
+                position: sticky;
+                top: 0;
+                background-color: white;
+                height: 65px;
+                padding-top: 8px;
+               
+            }
+            
+            
+            
+            .buttons{
+                display: inline-block;
+                vertical-align: bottom;
+                margin-top: 3px;
+                
+            }
+            .buttoncontact{
+                color: rgb(188, 217, 121);
+            	background-color: rgb(255, 255, 255);
+                border-color: rgb(188, 217, 121);
+                border-style: solid;
+                border-radius: 10px;
+                border-width: 3cap;
+                cursor: pointer;
+                transition: background-color 0.15s, color 0.15s;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px; 
+                padding-right: 16px;
+                vertical-align: top;
+                font-weight: bold;
+                font-size: 25px;
+                margin-right: 10px;
+            }
+            
+            .buttoncontact:hover{
+                    
+                background-color: rgb(188, 217, 121);
+                color:white;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+            }
+            .buttoncontact:active{
+
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+                
+
+            }
+            .buttondeutsch{
+                color: white;
+            	background-color: rgb(188, 217, 121);
+                border-color: rgb(188, 217, 121);
+                border-style: solid;
+                border-radius: 10px;
+                border-width: 3cap;
+                cursor: pointer;
+                transition: background-color 0.15s, color 0.15s;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px; 
+                padding-right: 16px;
+                vertical-align: top;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .buttondeutsch:hover{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+                background-color:rgb(186, 213, 122);
+            }
+            .buttondeutsch:active{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+                background-color:rgb(188, 217, 121);
+            }
+            
+            .buttonmedia{
+                color: rgb(188, 217, 121);
+            	background-color: rgb(255, 255, 255);
+                border-color: rgb(188, 217, 121);
+                border-style: solid;
+                border-radius: 10px;
+                border-width: 3cap;
+                cursor: pointer;
+                transition: background-color 0.15s, color 0.15s;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px; 
+                padding-right: 16px;
+                vertical-align: top;
+                font-weight: bold;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+            
+            .buttonmedia:hover{
+
+                background-color: rgb(188, 217, 121);
+                color:white;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+            }
+            .buttonmedia:active{
+
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+
+            }
+            .buttonlebenslauf{
+                color: rgb(188, 217, 121);
+            	background-color: rgb(255, 255, 255);
+                border-color: rgb(188, 217, 121);
+                border-style: solid;
+                border-radius: 10px;
+                border-width: 3cap;
+                cursor: pointer;
+                transition: background-color 0.15s, color 0.15s;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px; 
+                padding-right: 16px;
+                vertical-align: top;
+                font-weight: bold;
+                margin-right: 10px;
+                font-size:25px;
+            }
+            
+            .buttonlebenslauf:hover{
+
+                background-color: rgb(188, 217, 121);
+                color:white;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+            }
+            .buttonlebenslauf:active{
+
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+
+            }
+            .buttonevents{
+                color: rgb(188, 217, 121);
+            	background-color: rgb(255, 255, 255);
+                border-color: rgb(188, 217, 121);
+                border-style: solid;
+                border-radius: 10px;
+                border-width: 3cap;
+                cursor: pointer;
+                transition: background-color 0.15s, color 0.15s;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px; 
+                padding-right: 16px;
+                vertical-align: top;
+                font-weight: bold;
+                font-size:25px;
+                margin-right: 10px;
+                
+            }
+            
+            .buttonevents:hover{
+
+                background-color: rgb(188, 217, 121);
+                color:white;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+            }
+            .buttonevents:active{
+
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+
+            }
+           
+            
+            hr{
+
+                display: block;
+                height: 1px;
+                border: 0px;
+                border-top: 5px solid rgb(188, 217, 121);
+                margin: 0em 0;
+                padding: 0;
+                margin-top: none;
+                margin-bottom: 10px;
+               
+            }
+            .title{
+                
+                vertical-align: top;
+                height: 58px;
+            }
+            .titletext{
+                font-family: arial;
+                display: inline-block;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                color: rgb(188, 217, 121);
+                font-size: 60px;
+                margin-bottom: 6px;
+            }
+            h2{
+
+                font-family: arial;
+                margin-top: 0px;
+                margin-bottom: 11px;
+                color:rgb(188, 217, 121);
+                text-align: center;
+                font-size: 45px;
+            }
+            .primarypicture{
+
+                display: inline-block;
+                    width: 1666px;
+            }
+            
+           
+            
+            .contacttext{
+                font-family: arial;
+                color: white;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                background-color: rgb(119, 173, 120);
+                border-radius: 30px;
+                width: 1000px;
+                text-align: center;
+                margin-top: 0px;
+            
+            }
+            .buttonmail{
+                font-family: arial;
+                color: white;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                background-color: rgb(119, 173, 120);
+                border-radius: 30px;
+                width: 1000px;
+                text-align: center;
+                margin-top: 0px;
+                border:3px solid white;
+                font-size: 25px;
+                margin-bottom: 10px;
+                transition: background-color 0.15s, color 0.15s;
+                
+            }
+            .buttonmail:hover{
+                color:rgb(119, 173, 120);
+                background-color: white;
+                border:3px solid rgb(119, 173, 120);
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+            }
+            .buttonmail:active{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.20);
+            }
+           
+            
+            .buttonfacebook{
+                margin-bottom: 4px;
+            }
+            .facebook{
+                
+                font-family: sans-serif;
+                font-weight: bold;
+                background-color: rgb(24, 119, 242);
+                color: white;
+                border: 0px;
+                width: 475px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 30px;
+                font-size: 25px;
+                border:3px solid white;
+               
+            }
+            .facebook:hover{
+                color: rgb(24, 119, 242);
+                background-color: white;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+                border:3px solid rgb(24, 119, 242);
+                border-color: rgb(24, 119, 242);
+            }
+            .facebook:active{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+            }
+            .buttonfacebook{
+                display: inline-block;
+            }
+            .insta2{
+                
+                font-family: sans-serif;
+                font-weight: bold;
+                background-color: rgb(221, 42, 123);
+                color: white;
+                border: none;
+                width: 475px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 30px;
+                font-size: 25px;
+                border:3px solid white;
+               
+               }
+               .insta2:hover{
+                    color:rgb(253, 29, 29) ;
+                    background-color: white;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+                    border:3px solid rgb(253, 29, 29);
+                    border-color: rgb(253, 29, 29);
+                }
+                .insta2:active{
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+                }
+            .buttoninsta2{
+                display: inline-block;
+            }
+            .resume{
+                margin-top: 5px;
+            }
+            .resumetext{
+                text-align: center;
+                color: black;
+                font-family: arial;
+                margin-bottom: 0px;
+                display:inline-block;
+                font-size: 25px;
+                
+            }
+            .resumecontent{
+                margin-bottom: 20px;
+            }
+            
+            .eventstext{
+                text-align: center;
+                color: black;
+                font-family: arial;
+                font-size: 25px;
+                
+            }
+            .eventscontent{
+                margin-bottom: 20px;
+            }
+            .buttonsbottom{
+                margin-bottom: 20px;
+            }
+            .capella{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-family: arial;
+                color: black;
+                display: inline-block;
+            }
+            .mediacontent{
+                margin-bottom: 20px;
+            }
+            .idk{
+                color: white;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+            .nr1{
+                height: 600px;
+                
+            }
+            .nr5{
+                height: 600px;
+                
+            }
+            .nr12{
+                height: 600px;
+            }
+            .nr14{
+                height: 600px;
+                width: 408px;
+            }
+            .nr15{
+               
+                height:600px;
+            }
+            .zeile3{
+                text-align: center;
+            }
+            .menuline{
+                margin-top:7px;
+            }
+            p{
+                font-size: 25px;
+            }
+            .contacttitle{
+                margin-bottom:25px;
+            }
+            .end{
+                background-color: rgb(188, 217, 121) ;
+                color:rgb(188, 217, 121);
+            }
+            .endtext{
+                margin:0px;
+                background-color:rgb(188, 217, 121);
+                font-family: arial;
+                text-align: center;
+                font-size: medium;
+                padding-top:50px;
+                padding-bottom: 50px;
+            }
+            
+            /* This is all audiosample <------------------------------------------------------------------------------------------------------------------------------------------> */
+            .audio{
+                text-align: center;
+              
+              
+                
+            }
+            audio::-webkit-media-controls-panel {
+                background-color: rgb(119, 173, 120);
+               
+               
+            
+            }
+            audio::-webkit-media-controls-mute-button {
+                background-color: rgb(188, 217, 121);
+                border-radius: 50%;
+            }
+            audio::-webkit-media-controls-mute-button:hover {
+                background-color: rgb(208, 232, 150);
+                border-radius: 50%;
+            }
+            audio::-webkit-media-controls-timeline {
+                background-color: rgb(188, 217, 121);
+                border-radius: 25px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            audio::-webkit-media-controls-timeline:hover {
+                background-color: rgb(208, 232, 150);
+                border-radius: 25px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            audio::-webkit-media-controls-play-button {
+                background-color: rgb(188, 217, 121);
+                border-radius: 50%;
+            }
+            audio::-webkit-media-controls-volume-slider {
+                background-color: rgb(188, 217, 121);
+                border-radius: 25px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            audio::-webkit-media-controls-volume-slider:hover {
+                background-color: rgb(208, 232, 150);
+                border-radius: 25px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+           
+            
+            audio::-webkit-media-controls-play-button:hover {
+                background-color: rgb(208, 232, 150);
+            }
+            .audiospace{
+                margin-bottom: 20px;
+            }
+            
+            
+
+          
+            
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu2" style="
+                display: grid;
+                grid-template-columns:1fr 678px;">
+                <div class="title">
+                    <h1 class="titletext">Elisabeth Kaufhold</h1>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="buttonlebenslauf" onclick="location.href='#resume'" alt="Button, which brings you to the resume">
+                        Resume
+                    </button>
+                    <button class="buttonmedia" onclick="location.href='#media'" alt="Button, which brings you to the media">
+                        Media
+                    </button>
+                    <button class="buttonevents" onclick="location.href='#events'" alt="Button,which brings you to the events">
+                        Events
+                    </button>
+                    <button class="buttoncontact" onclick="location.href='#contact'" alt="Button, which brings you to the contact information">
+                        Contact
+                    </button>
+                    <a href="Websiteschoolfinalgerman.html">
+                    <button class="buttondeutsch" alt="Button, which changes the language to Deutsch">
+                        Deutsch
+                    </button>
+                    </a>
+                </div>
+            
+            </div>
+            <hr class="menuline">
+         </div>
+        <div class="content">
+            <div class="picture" style="
+                display:grid;
+                grid-template-columns: 1fr 1666px 1fr;">
+                <div> <p class="idk">i</p></div>
+                <div><img class="primarypicture" src="primarypicture.jpg" alt="Titlepicture of the website"></div>
+                <div><p class="idk">i</p></div>
+            </div>
+            <div> <p class="idk">I <span id="resume">dont </span> know, what I should write here...</p></div>
+            <hr>
+            <div class="resume">
+                <h2>
+                    Resume
+                </h2>
+                <div class="resumecontent">
+                    <p class="resumetext">
+                        Elisabeth Kaufhold first studied recorder with Birgit Beyer, Prof. Peter Thalheimer and Prof. Jeremias Schwarzer at the Musikhochschule in Nuremberg from 1998 to 2002.
+                        There she also began studying the baroque bassoon with Ursula Bruckdorfer, which she deepened in postgraduate studies at the Schola Cantorum in Basel with Donna Agrell and in Frankfurt with Christian Beuse.
+                        At the same time, she began postgraduate studies in recorder at the Musikhochschule in Zurich with Matthias Weilenmann.
+                        Already during her studies she performed in renowned baroque orchestras such as the Akademie für Alte Musik Berlin, the Collegium 1704 Prague under Vaclav Luks or the <span id="media"> Capella </span> Augustina under Andreas Spering.
+                        She can be heard in numerous radio and CD recordings.
+                        Since 2007, the freelance artist lives and works in Berlin.
+                    </p>
+                </div>
+            </div>
+                
+            <div class="media">
+            <hr>
+                <div class="mediatext">
+                        <h2 id="media">
+                             Media
+                        </h2>
+                </div>
+                <div class="mediacontent">
+                    <div class="zeile1" style="
+                            display: grid;
+                            grid-template-columns: 1fr 405px 4px 900px 1fr;">
+                        <div class="idk">i</div>
+                        <div>
+                            <img class="nr1" src="Nr1.jpg" alt="Picture of Elisabeth Kaufhold leaning on a wall with her basson in her hands">
+                        </div>
+                        <div class="idk">i</div>
+                        <div>
+                            <img class="nr5" src="Nr5.jpg" alt="Picture of Elisabeth Kaufhold leaning on a tree with her basson in her hands">
+                        </div>
+                        <div class="idk">i</div>
+                    </div>
+                    <div class="zeile2" style="
+                                display: grid;
+                                grid-template-columns: 1fr 900px 4px 408px 1fr;">
+                            <div class="idk">i</div>
+                            <div>
+                                <img class="nr12" src="Nr12.jpg" alt="Elisabeth Kaufghold, standing next to a tree and holding her basson in heer hands">
+                            </div>
+                            <div class="idk">i</div>
+                            <div>
+                                <img class="nr14" src="Nr14.jpg" alt="Elisabeht Kaufhold kneels under a fallen tree with her bassoon in her hand">
+                            </div>
+                            <div class="idk">idk what to write here</div>
+                    </div>
+                    <div class="zeile3">
+                        <img class="nr15" src="Nr15.jpg" alt="Elisabeth Kaufhold kniew in a meadow">
+                    </div>
+                </div>
+                <div class="audiospace"><div class="audio"><audio controls src="WhatsApp Audio 2023-09-20 at 00.47.13.dat.unknown.mp4"></audio></div></div>
+            </div>
+            <hr>
+            <div class="events">
+                <h2 id="events" >
+                        Events
+                </h2>
+                <div class="eventscontent">
+                    <div class="eventstext">
+                        -21.8.23 CD recording in Poland <br>
+                        -16.9.23 Opening concert Festival Kloster Knechtsteden. (See website for details: Rheinische Kantorei) <br>
+                        -23.9.23 Final concert of the festival. (See website for details: Rheinische Kantorei) <br>
+                        -5/6/7.10.23 October concerts with the ensemble : La Fiesta Musical. (See website for details) <br>
+                        -8.10.23 Dulzianconsort concert at the Kirche am Lietzensee. (See website for details: Titans Rising) <br> 
+                        -14.10.23: Concert with the Bachakademie Stuttgart: Vision.Bach, Himmelsglanz and Höllenflammen (See website for details: Bachakademie website) <br>
+                        -12.11.23 Counter in the concert series "Titans Rising": "All wild beast in the green forest"-A celebration of nature. (See website for details: Titans Rising) <br>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="contact">
+                    <h2 class="contacttitle" id="contact">
+                       Contact
+                    </h2>
+                    <div class="contactcontent">
+                        <div class="email" style="
+                            display:grid;
+                            grid-template-columns: 1fr 1000px 1fr;">
+                            <div class="idk">i</div>
+                            <div> <a href="mailto:elisabethkaufhold3@gmail.com"><button class="buttonmail" alt="Opens Mail, with Elisabeth Kaufhold's E-Mail already put in">E-Mail: elisabethkaufhold3@gmail.com</button></a></div>
+                            <div class="idk">i</div>
+                        </div>
+                        <div class="phone" style="
+                            display:grid;
+                            grid-template-columns: 1fr 1000px 1fr;">
+                        
+                        
+                            <div class="idk">i</div>
+                            <div><p class="contacttext">Phone: +49 173 5955 918</p></div>
+                            <div class="idk">i</div>
+                        </div>
+                        <div class="buttonsbottom" style="
+                            display:grid;
+                            grid-template-columns: 1fr 475px 53px 475px 1fr;">
+                            <div class="idk">i</div>
+                            <div class="buttonfacebook">
+                                 <a href="https://www.facebook.com/elisabeth.kaufhold.1">
+                                    <button class="facebook" alt="Button, which brings you to Elisabeth Kaufholds facebook">
+                                        facebook
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="idk">i</div>
+                            <div class="buttoninsta2">
+                                <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+                                    <button class="insta2" alt="Button, which brings you to Elisabeth Kaufholds instagram">
+                                        Instagram
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="idk">i</div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div>
+               <p class="endtext">Designed and Programmed by <br>Konstantin Schwarzer</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
